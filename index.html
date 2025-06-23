@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIV Care Connect - Free Support & Information</title>
+    <style>
+        body {font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 10px; color: #333;}
+        header {background-color: #4b8df8; color: white; padding: 10px; text-align: center;}
+        nav {background-color: #f4f4f4; padding: 10px; text-align: center;}
+        nav a {margin: 0 5px; color: #333; text-decoration: none;}
+        section {margin: 15px 0;}
+        footer {text-align: center; font-size: 0.8em; margin-top: 20px;}
+        .resource-box {border: 1px solid #ddd; padding: 10px; margin: 10px 0; background-color: #f9f9f9;}
+        .page {display: none;}
+        .active {display: block;}
+        .emergency {background-color: #ffebee; border-left: 4px solid #f44336;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HIV Care Connect</h1>
+        <p>Free Confidential Support • Treatment Info • Prevention</p>
+    </header>
+    
+    <nav>
+        <a href="#" onclick="showPage('home')">Home</a>
+        <a href="#" onclick="showPage('prevention')">Prevention</a>
+        <a href="#" onclick="showPage('treatment')">Treatment</a>
+        <a href="#" onclick="showPage('testing')">Testing</a>
+        <a href="#" onclick="showPage('support')">Support</a>
+    </nav>
+
+    <!-- HOME PAGE -->
+    <div id="home" class="page active">
+        <section>
+            <h2>Free HIV Information & Support</h2>
+            <p>Confidential resources for prevention, testing, treatment and living well with HIV.</p>
+            
+            <div class="resource-box emergency">
+                <h3>24/7 Crisis Support:</h3>
+                <p><strong>SMS "HIV HELP" to 12345</strong> for immediate confidential counseling</p>
+            </div>
+        </section>
+        
+        <section>
+            <h3>Quick Access:</h3>
+            <div class="resource-box">
+                <ul>
+                    <li><a href="#" onclick="showPage('testing')">Find Free Testing Centers</a></li>
+                    <li><a href="#" onclick="showPage('treatment')">ARV Treatment Locations</a></li>
+                    <li><a href="#" onclick="showPage('support')">Support Groups</a></li>
+                </ul>
+            </div>
+        </section>
+        
+        <section>
+            <h3>Myths vs Facts</h3>
+            <div class="resource-box">
+                <p><strong>Myth:</strong> HIV can spread through touch or saliva<br>
+                <strong>Fact:</strong> HIV spreads only through specific body fluids</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- PREVENTION PAGE -->
+    <div id="prevention" class="page">
+        <section>
+            <h2>HIV Prevention</h2>
+            <p>Protect yourself and others</p>
+        </section>
+        
+        <section>
+            <h3>Safe Practices</h3>
+            <div class="resource-box">
+                <ul>
+                    <li>Always use condoms correctly</li>
+                    <li>Never share needles</li>
+                    <li>Get tested with new partners</li>
+                </ul>
+                <p><strong>SMS "PREVENT" to 33445</strong> for free condom locations</p>
+            </div>
+        </section>
+        
+        <section>
+            <h3>PrEP (Pre-Exposure Prophylaxis)</h3>
+            <div class="resource-box">
+                <p>Daily medication that reduces HIV risk by 99%</p>
+                <p><strong>Free PrEP Clinics:</strong> SMS "PREP [Your Area]" to 55667</p>
+            </div>
+        </section>
+        
+        <section>
+            <h3>Mother-to-Child Prevention</h3>
+            <div class="resource-box">
+                <p>With proper treatment, risk can be reduced to &lt;1%</p>
+                <p><strong>Pregnant?</strong> SMS "PMTCT" to 77889 for prenatal care</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- TREATMENT PAGE -->
+    <div id="treatment" class="page">
+        <section>
+            <h2>HIV Treatment</h2>
+            <p>Live healthy with proper care</p>
+        </section>
+        
+        <section>
+            <h3>ARV Therapy</h3>
+            <div class="resource-box">
+                <ul>
+                    <li>Free antiretroviral (ARV) medicines available</li>
+                    <li>Take medications as prescribed</li>
+                    <li>Viral load can become undetectable</li>
+                </ul>
+                <p><strong>ARV Locations:</strong> SMS "ARV [Your Town]" to 11223</p>
+            </div>
+        </section>
+        
+        <section>
+            <h3>Medication Adherence</h3>
+            <div class="resource-box">
+                <p><strong>Remember Your Meds:</strong></p>
+                <ul>
+                    <li>Set phone alarms</li>
+                    <li>Use pill organizers</li>
+                    <li>SMS "REMIND" to 44556 for daily reminders</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section>
+            <h3>Nutrition & Wellness</h3>
+            <div class="resource-box">
+                <p><strong>Healthy Living Tips:</strong></p>
+                <ol>
+                    <li>Balanced diet with proteins</li>
+                    <li>Regular light exercise</li>
+                    <li>Adequate sleep</li>
+                </ol>
+                <p>SMS "FOOD" to 33445 for nutrition advice</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- TESTING PAGE -->
+    <div id="testing" class="page">
+        <section>
+            <h2>HIV Testing</h2>
+            <p>Know your status confidentially</p>
+        </section>
+        
+        <section>
+            <h3>Free Testing Centers</h3>
+            <div class="resource-box">
+                <p><strong>Find Nearest Center:</strong></p>
+                <p>SMS "TEST [Your Location]" to 54321</p>
+                <p>OR</p>
+                <p>Call national hotline: 0800-123-456</p>
+            </div>
+        </section>
+        
+        <section>
+            <h3>Testing FAQs</h3>
+            <div class="resource-box">
+                <p><strong>Q:</strong> How soon after exposure should I test?<br>
+                <strong>A:</strong> Wait 3 months for conclusive results</p>
+                
+                <p><strong>Q:</strong> Are tests confidential?<br>
+                <strong>A:</strong> Yes, by law your status is private</p>
+            </div>
+        </section>
+        
+        <section>
+            <h3>Home Testing Kits</h3>
+            <div class="resource-box">
+                <p>Available at pharmacies</p>
+                <p><strong>Accuracy:</strong> 99% if used correctly</p>
+                <p>SMS "KIT" to 66778 for guidance</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- SUPPORT PAGE -->
+    <div id="support" class="page">
+        <section>
+            <h2>Support Services</h2>
+            <p>You're not alone</p>
+        </section>
+        
+        <section>
+            <h3>Crisis Counseling</h3>
+            <div class="resource-box emergency">
+                <p><strong>24/7 Support:</strong> Call 0800-789-123</p>
+                <p>OR</p>
+                <p>SMS "TALK" to 54321 for immediate help</p>
+            </div>
+        </section>
+        
+        <section>
+            <h3>Support Groups</h3>
+            <div class="resource-box">
+                <p><strong>In-Person Meetings:</strong></p>
+                <p>SMS "GROUP [Your Area]" to 33445</p>
+                
+                <p><strong>Online Chat:</strong></p>
+                <p>Text "CHAT" to 55667 for virtual support</p>
+            </div>
+        </section>
+        
+        <section>
+            <h3>Legal Rights</h3>
+            <div class="resource-box">
+                <ul>
+                    <li>Discrimination protection</li>
+                    <li>Healthcare rights</li>
+                    <li>Employment rights</li>
+                </ul>
+                <p>SMS "LAW" to 11223 for free legal advice</p>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>HIV Care Connect is part of Facebook Free Basics - Providing free health information</p>
+        <p>All services are confidential | Data usage: &lt;10KB per visit</p>
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            var pages = document.getElementsByClassName('page');
+            for (var i = 0; i < pages.length; i++) {
+                pages[i].classList.remove('active');
+            }
+            
+            // Show selected page
+            document.getElementById(pageId).classList.add('active');
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>
